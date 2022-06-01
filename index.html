@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/semantic.min.css">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="Semantic-UI-CSS-master/semantic.min.js"></script>
+    <title>Login</title>
+    <style>
+        body{
+            display:grid;
+            width: 90vw;
+            height: 95vh;
+            background-image: radial-gradient(circle at 31.7% -18.3%, #fff669 0, #fff964 7.14%, #f1fa62 14.29%, #d8fb62 21.43%, #bcfa64 28.57%, #9df969 35.71%, #76f66f 42.86%, #3cf278 50%, #00ee83 57.14%, #00e991 64.29%, #00e5a1 71.43%, #00e1b3 78.57%, #00ddc6 85.71%, #00dada 92.86%, #00d7ef 100%);
+  
+        }
+        #container{
+            width: 400px;
+           margin-left: 40%;
+            margin-top:10%;
+            margin-bottom: 10%;
+            border: solid 1px grey;
+            margin-right: 40%;
+            
+            background-color: rgba(255,255,255,0.25);
+            border-radius: 10px;
+        }
+        #iniciar{
+            background-color: black;
+            color: white;
+            
+        }
+        #iniciar:hover{
+            background-color:#0ed179;
+        }
+        
+    </style>
+</head>
+<body>
+    
+            <div  class="ui grid stackable centered"id="container">
+                <form class="ui huge form " action="validar.php" method="post">
+                    <br>
+                    <h1 class="ui dividing header">Login de Ingreso</h1>
+                    <div class="field">
+                      <label>Email</label>
+                      <div class="ui left icon input">
+                        <i class="users icon"></i>
+                        <input type="text" name="email"  placeholder="Ingrese su email"> </br> 
+                        
+                      </div>
+                        
+
+                    </div>
+                    <div class="field">
+                      <label>Contraseña</label> 
+                      <div class="ui left icon input">
+                      <i class="key icon"></i>              
+                      <input type="password" name="contra" placeholder="Ingrese su contraseña"><br>
+                    </div> 
+                    </div>
+
+                    <button class="ui huge button" name="btnLogin" id="iniciar" type="submit">Iniciar Sesion</button>
+                  </form>
+
+    </div>
+
+    
+</body>
+</html>
